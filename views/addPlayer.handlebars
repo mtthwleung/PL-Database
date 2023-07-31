@@ -1,0 +1,77 @@
+<h2>Add a new player here</h2>
+
+<form id="add-form">
+    <p>All fields must be filled</p>
+
+    <label for ="playername">Player Name:</label>
+    <input type="text" id="playername" name="playername">
+
+    <br>
+
+    <label for="position">Position: </label>
+    <input type="text" id="position" class="position" name ="position">
+
+    <br>
+
+    <label for ="teamselection">Team</label>
+    <select id = "teamselection" class="teamselection" name = "team">
+        <option disabled selected value> Select a Team </option>
+        <option value = "1">Arsenal</option>
+        <option value = "2">Aston Villa</option>
+        <option value = "3">Bournemouth</option>
+        <option value = "4">Brentford</option>
+        <option value = "5">Brighton</option>
+        <option value = "6">Burnley</option>
+        <option value = "7">Chelsea</option>
+        <option value = "8">Crystal Palace</option>
+        <option value = "9">Everton</option>
+        <option value = "10">Fulham</option>
+        <option value = "11">Liverpool</option>
+        <option value = "12">Luton</option>
+        <option value = "13">Manchester City</option>
+        <option value = "14">Manchester United</option>
+        <option value = "15">Newcastle</option>
+        <option value = "16">Nottingham Forest</option>
+        <option value = "17">Sheffield United</option>
+        <option value = "18">Tottenham</option>
+        <option value = "19">West Ham</option>
+        <option value = "20">Wolves</option>
+    </select>
+
+    <br>
+
+    <label for ="nationalteamDropdown">National Team</label>
+    <select id = "nationalteamDropdown" class="nationalteamDropdown" name = "team">
+        <option disabled selected value> Select a Team </option>
+        <option value = "0">No National Team</option>
+        <option value = "1">England</option>
+        <option value = "2">Brazil</option>
+        <option value = "3">France</option>
+        <option value = "4">Argentina</option>
+        <option value = "5">Belgium</option>
+        <option value = "6">Netherlands</option>
+        <option value = "7">Italy</option>
+        <option value = "8">Portugal</option>
+        <option value = "9">Spain</option>
+        <option value = "10">Germany</option>
+    </select>
+
+
+
+    <br>
+    <label for="marketvalue">Market Value (€ in millions): </label>
+    <input type="text" id="marketvalue" class = "marketvalue" name ="marketvalue">
+    
+    <br>
+
+    <button type="submit">Add Player</button>
+</form>
+
+<p class="result"></p>
+
+
+
+
+
+
+<script src = '/addplayer.js'></script>

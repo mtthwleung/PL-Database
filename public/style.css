@@ -1,0 +1,45 @@
+body {
+    font-family: Verdana;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}
+
+thead {
+    margin: 1.5rem;
+    /* padding: 3rem; */
+    font-size: 1rem;
+    background-color: lightblue;
+}
+
+th {
+    padding: 1.5rem 0.5rem;
+}
+
+td {
+    text-align: center;
+    margin: 1rem;
+    padding: 0.3rem;
+    width: 20%;
+}
+
+#narrow {
+    width: 10%;
+}
+
+#carouselExample {
+    width: 75%;
+    height: 50%;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 50rem;
+}

@@ -1,0 +1,24 @@
+<h1>Club Teams</h1>
+
+<table>
+    <thead>
+        <th scope ="col"><strong>Club Name</strong></th>
+        <th scope ="col"><strong>Manager</strong></th>
+        <th scope ="col"><strong>Stadium</strong></th>
+        <th scope ="col" id="narrow"><strong>League Wins</strong></th>
+        <th scope ="col" id="narrow"><strong>European Cup wins</strong></th>
+        <th scope ="col"><strong>Transfer Budget (€)</strong></th>
+    </thead>
+    <tbody>
+        {{#each teamInfo}}
+            <tr>
+                <td><a href="/teams/{{this.id}}">{{this.team_name}}</a></td>
+                <td>{{this.manager_name}}</td>
+                <td>{{this.stadium_name}}</td>
+                <td id="narrow">{{this.league_wins}}</td>
+                <td id="narrow">{{this.european_cup_wins}}</td>
+                <td>{{this.transfer_budget}},000,000</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

@@ -1,0 +1,22 @@
+{{#each teamPlayers}}
+  {{#if @first}}
+    <h1 class="countryName">{{country}}</h1>
+  {{/if}}
+{{/each}}
+
+<table>
+    <thead>
+        <th scope ="col"><strong>Player Name</strong></th>
+        <th scope ="col"><strong>Position</strong></th>
+        <th scope ="col"><strong>Club Team</strong></th>
+    </thead>
+    <tbody>
+        {{#each teamPlayers}}
+            <tr>
+                <td>{{this.player_name}}</td>
+                <td>{{this.position}}</td>
+                <td><a href="/teams/{{this.id}}">{{this.name}}</a></td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

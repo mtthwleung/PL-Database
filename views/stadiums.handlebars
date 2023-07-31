@@ -1,0 +1,18 @@
+<h1>Football Stadiums</h1>
+
+<table>
+    <thead>
+        <th scope ="col"><strong>Name</strong></th>
+        <th scope ="col"><strong>Opened</strong></th>
+        <th scope ="col"><strong>Capacity</strong></th>
+    </thead>
+    <tbody>
+        {{#each stadia}}
+            <tr>
+                <td><a href="http://www.google.com/search?q={{this.name}}" target="blank">{{this.name}}</a></td>
+                <td>{{this.opened}}</td>
+                <td>{{this.capacity}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

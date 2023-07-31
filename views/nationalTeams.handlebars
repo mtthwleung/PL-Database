@@ -1,0 +1,24 @@
+<h1>National Teams</h1>
+
+<table>
+    <thead>
+        <th scope ="col"><strong>Country</strong></th>
+        <th scope ="col"><strong>Manager</strong></th>
+        <th scope ="col"><strong>Stadium</strong></th>
+        <th scope ="col" id="narrow"><strong>World Cups</strong></th>
+        <th scope ="col" id="narrow"><strong>Most Caps</strong></th>
+        <th scope ="col"><strong>Most Goals</strong></th>
+    </thead>
+    <tbody>
+        {{#each natInfo}}
+            <tr>
+                <td><a href="/nationalteams/{{this.id}}">{{this.country}}</a></td>
+                <td>{{this.manager_name}}</td>
+                <td>{{this.stadium_name}}</td>
+                <td id="narrow">{{this.world_cup_wins}}</td>
+                <td id="narrow">{{this.most_appearances}}</td>
+                <td>{{this.most_goals}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
